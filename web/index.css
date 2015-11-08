@@ -1,0 +1,14 @@
+body {
+  background-color: white;
+  font-weight: thin;
+}
+
+h1 {
+  color: red;
+  font-weight: strong;
+}
+
+.jumbotron {
+  margin-top: 10px;
+  background-color: #0000aa;
+}
