@@ -1,0 +1,54 @@
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+        
+        
+      <script>
+         $(document).ready(function() {
+         $('select').material_select();
+      });
+          
+           
+      </script>
+  
+
+
+        <nav>
+            <div class="nav-wrapper light-blue darken-4">
+                <a href="HomePage.html" class="brand-logo">Logo</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="BrowseScholarships.html">Browse Scholarships</a></li>
+                    <li><a href="#!">Add Scholarships</a></li>
+                </ul>
+
+                <ul id="slide-out" class="side-nav">
+                    <li><a href="BrowseScholarships.html">Browse Scholarships</a></li>
+                    <li><a href="#!">Add Scholarships</a></li>
+                </ul>
+
+                <a href="#" data-activates="slide-out" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>            
+                </a>
+            </div>
+            
+        </nav> 
+        
+
+
+
+
+        <script>
+            // Initialize collapse button
+              $(".button-collapse").sideNav();
+              // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+              //$('.collapsible').collapsible();
+            
+            $('.button-collapse').sideNav({
+                  menuWidth: 300, // Default is 240
+                  edge: 'left', // Choose the horizontal origin
+                  closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            });
+        </script>
